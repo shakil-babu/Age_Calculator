@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <title>Age Calculator</title>
+</head>
+<body>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="card text-center animated bounceIn">
+                <div class="card-body">
+                    <div id="showMain">
+                        <input id='nameInput' type="text" class="form-control mb-3"  placeholder='আপনার নাম কি ? ' required>
+                        <h5 id="showE" style="color:red ;"></h5>
+                        <button id='eiinBtn' class="btn btn-success btn-block">প্রবেশ করুন</button>
+                    </div>
+                    <div id="Main" class="animated bounceInLeft">
+                        <h4 class="card-titile ">আপনার বয়স নির্ণয় করুন</h4>
+                    <hr style='width:100px ;background-color:#ffc107; height:1px;'>
+
+                    <div class="designYMD pb-1" style="font-size: 17px;">
+                        <span>বছর</span>
+                        <span>মাস</span>
+                        <span>দিন</span>
+                    </div>
+                    <div class="d-flex">
+                        <input class=' form-control' type="text" placeholder="বর্তমান বছর" id='presentYear' required>
+                        <input class="ml-2 form-control" type="text" placeholder="বর্তমান মাস" id='presentMonth' required>
+                        <input class="ml-2 form-control" type="text" placeholder="বর্তমান দিন" id='presentDay' required>
+                    </div>
+                    <div class="designYMD pb-1" style="font-size: 17px;">
+                        <span style="width:20px; height:2px ; background-color:#ffc107; margin-top:10px; margin-bottom:5px;"></span>
+                        <span style="width:20px; height:2px ; background-color:#ffc107; margin-top:10px; margin-bottom:5px;"></span>
+                        <span style="width:20px; height:2px ; background-color:#ffc107; margin-top:10px; margin-bottom:5px;"></span>
+                    </div>
+                    <div class="d-flex">
+                        <input class=' form-control' type="text" placeholder="জন্ম-সাল" id='birthYear' required>
+                        <input class="ml-2 form-control" type="text" placeholder="জন্ম-মাস" id='birthMonth' required>
+                        <input class="ml-2 form-control" type="text" placeholder="জন্ম-দিন" id='birthDay' required>
+                    </div>
+                    <h5 id="showError"></h5>
+                    <button id='calculateBtn' class="mt-3 btn-block btn-warning p-2">নির্ণয় করুন</button>
+                    <div id='fillOut'></div>
+
+                    <div id="calculatedAge" class="animated swing fast">
+                        <h5 class="text-left mt-2 mb-3"> হ্যালো <span id='showName'></span> , আপনার বর্তমান বয়স -- </h5>
+                        <div style="display:flex ; justify-content: space-between;">
+                            <span id='showYear' style='border:2px solid #ffc107; padding:15px 40px;'></span>
+                            <span id='showMonth' style='border:2px solid #ffc107; padding:15px 50px;'> </span>
+                            <span id='showDay' style='border:2px solid #ffc107; padding:15px 50px;'></span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- Script -->
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/jquery-slim.min.js"></script>
+<script src="./js/popper.min.js"></script>
+<script src="./code.js"></script>
+</body>
+</html>
